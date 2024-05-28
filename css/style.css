@@ -1,0 +1,215 @@
+body{
+  scroll-behavior: smooth;
+}
+menu{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #040407;
+  z-index: 10;
+}
+nav{
+  height: 80px;
+}
+.front-img{
+  width: 100%;
+  height: auto;
+  max-width: 80px;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 15px;
+}
+nav ul li a i{
+  margin: 5px;
+}
+nav ul li a:hover , a:active{
+  background: #cd1a2f;
+  transition: 0.5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+.head{
+  background-image:url("../img/images.jfif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #110e1c;
+  background-blend-mode: overlay;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.disc{
+  color: #ffffff;
+}
+.disc-h1{
+  font-size: 6.5vw;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.disc-p{
+  font-size: 1.8vw;
+  margin: 0 15px;
+  text-indent: 25px;
+  text-align: justify;
+}
+.header-img{
+  max-width: 540px;
+  
+}
+main{
+  margin-top: 40px;
+}
+main .disc-p{
+  font-size: 1.6vw;
+}
+main .disc-h1{
+  font-size: 4vw;
+}
+section[class*="pro"]{
+  margin-top: 100px;
+}
+main section[class*="product"]:nth-child(odd) img{
+  background-color: #110e1c;
+  border-radius:30% 70% 36% 64% / 66% 50% 50% 34%  ;
+}
+main section[class*="product"]:nth-child(even) img{
+  background-color: #110e1c;
+  border-radius: 50% 50% 39% 61% / 52% 25% 75% 48%;
+}
+main section[class*="product"] img{
+  width: 100%;
+  height: auto;
+  max-width: 540px;
+}
+
+main section[class*="disc"] button{
+  padding: 1.3vw 1.4vw;
+  margin: 1.2vw 1.2vw;
+  border-radius: 5px;
+  background-color:#040407 ;
+  color: white;
+  border: none;
+  transition: all 0.5s;
+}
+main section[class*="disc"] button:hover{
+  background-color: #cd1a2f;
+}
+main .row{
+  align-items: center;
+}
+footer{
+  background-color: #110e1c;
+}
+footer .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+footer p{
+  color: white;
+  font-size: 1.4vw;
+  text-align: justify;
+  text-indent: 25px;
+}
+.footer-img{
+  width: 100%;
+  max-width: 200px;
+  margin-left: 100px;
+}
+
+.site-copy-right{
+  background-color: #040407;
+}
+.site-copy-right p{
+  text-align: center;
+  padding: 10px;
+}
+ .spacer{
+  aspect-ratio: 960/400;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ }
+ .layer1{
+  background-image: url("../img/wave-haikei.svg");
+ }
+
+
+@media (max-width: 992px){
+  nav ul li a{
+    font-size: 16px;
+  }
+  .head{
+    margin-top: 70px;
+  }
+  .product2-img{
+    display: flex;
+    order: -1;
+   }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  menu{
+    background-color: #110e1c;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(17, 14, 28); 
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  nav ul li{
+    display: block;
+  }
+  a:hover, a:active{
+    display: block;
+    width: 100%;
+    background-color: #cd1a2f;
+    color:#fff ;
+    border-radius: 0;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+ 
+}
+
