@@ -29,7 +29,7 @@ nav ul li a {
   color: white;
   font-size: 17px;
   padding: 7px 13px;
-  border-radius: 15px;
+  border-radius: 24px;
 }
 nav ul li a i{
   margin: 5px;
@@ -106,13 +106,14 @@ main section[class*="product"] img{
 }
 
 main section[class*="disc"] button{
-  padding: 1.3vw 1.4vw;
-  margin: 1.2vw 1.2vw;
+  padding: 1vw 1vw;
+  margin: 1vw ;
   border-radius: 5px;
   background-color:#040407 ;
   color: white;
   border: none;
   transition: all 0.5s;
+  font-size: 1vw;
 }
 main section[class*="disc"] button:hover{
   background-color: #cd1a2f;
