@@ -127,7 +127,7 @@ footer .container{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  padding:0 30px;
 }
 footer p{
   color: white;
@@ -159,7 +159,35 @@ footer p{
   background-image: url("../img/wave-haikei.svg");
  }
 
-
+.social{
+  height: 50px;
+  background-color: #0b0912;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.social i{
+  padding: 10px 20px;
+  font-size: 50px;
+}
+.social i[class*="plane"]{
+  font-size: 40px;
+}
+.social i[class*="plane"]:hover{
+  font-size: 42px;
+  color:  #cd1a2f;
+}
+ a , a:visited{
+  color: white;
+}
+.footer-disc a:hover{
+  color: #cd1a2f;
+}
+.social i:not([class*="plane"]):hover{
+  font-size: 52px;
+  color: #cd1a2f;
+}
 @media (max-width: 992px){
   nav ul li a{
     font-size: 16px;
