@@ -91,12 +91,19 @@ main .disc-h1{
 section[class*="pro"]{
   margin-top: 100px;
 }
+main .product1-img img{
+  background-color: #c26905;
+}
+main .product2-img img{
+  background-color: #4f3550;
+}
+main .product3-img img{
+  background-color: #56841c;
+}
 main section[class*="product"]:nth-child(odd) img{
-  background-color: #110e1c;
   border-radius:30% 70% 36% 64% / 66% 50% 50% 34%  ;
 }
 main section[class*="product"]:nth-child(even) img{
-  background-color: #110e1c;
   border-radius: 50% 50% 39% 61% / 52% 25% 75% 48%;
 }
 main section[class*="product"] img{
@@ -137,9 +144,14 @@ footer p{
   text-indent: 25px;
 }
 .footer-img{
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-img img{
+  min-width: 80px;
   max-width: 200px;
-  margin-left: 100px;
 }
 
 .site-copy-right{
